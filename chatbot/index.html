@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="rob.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <style>
+    /* Slideshow background container */
+    .bgded {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      /* Full viewport height */
+      background-size: cover;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <body id="top">
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded">
+      <!-- Wrapper for content -->
+      <div class="wrapper overlay">
+        <header id="header" class="hoc clear">
+          <nav id="mainav" class="clear">
+            <ul class="clear">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#">How it Works</a></li>
+              <li><a href="#">Popular Disease</a></li>
+              <li><a href="#">About Us</a></li>
+              
+            </ul>
+          </nav>
+          <div id="logo">
+            <h1><a href="index.html">AGRE</a></h1>
+            <p>Har problem ka Solution</p>
+          </div>
+        </header>
+      </div>
+      <!-- Introductory content -->
+      <div id="pageintro" class="hoc clear">
+        <article>
+          <div class="introtxt">
+            <p class="font-xs nospace"></p>
+            <h2 class="heading">Welcome to our AI-powered crop disease detection platform!</h2>
+            <p> Simply upload a photo of your affected plant, and our advanced system will instantly analyze and diagnose the issue. Get accurate results along with practical solutions to protect your crops, minimize losses, and enhance productivity. Designed for farmers, gardeners, and agricultural professionals, our tool makes plant health management easier and more efficient.
+
+
+
+
+
+
+              </p>
+          </div>
+          <footer>
+            <ul class="nospace inline pushright">
+              <!---<li><a class="btn inverse" href="#">SEARCH</a></li>-->
+              <li><a class="btn" href="https://crop-disease-detector.vercel.app/" target="_blank">UPLOAD</a></li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+    </div>
+    <!-- End Top Background Image Wrapper -->
+
+    <!-- JavaScript for Background Slideshow -->
+    <script>
+      // Array of background images
+      const backgrounds = [
+        'url("image2.jpg")',
+        'url("4.png")',
+        'url("6.png")'
+      ];
+
+      let currentBackgroundIndex = 0;
+
+      // Function to change the background image
+      function changeBackground() {
+        // Get the bgded element
+        const bgded = document.querySelector('.bgded');
+
+        // Update the background image
+        bgded.style.backgroundImage = backgrounds[currentBackgroundIndex];
+
+        // Increment index and reset if it exceeds array length
+        currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+
+        // Change background every 5 seconds
+        setTimeout(changeBackground, 5000);
+      }
+
+      // Start the background slideshow
+      changeBackground();
+    </script>
+
+  </body>
+
+</html>
+
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!--<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+      <section id="testimonials" class="hoc container clear"> 
+         ################################################################################################ -->
+<!---- <div class="center btmspace-50">
+          <h2 class="heading">Etiam proin porta interdum</h2>
+          <p>Purus vestibulum ante ipsum primis in faucibus orci luctus turpis ullamcorper dolor gravida ut laoreet arcu finibus praesent tincidunt nulla id augue hendrerit ac eleifend turpis tempor suspendisse fringilla massa nec laoreet.</p>
+        </div>
+        <ul class="nospace group">
+          <li class="one_half first">
+            <div class="clear"><img src="images/demo/80x80.png" alt=""> <span class="block"><strong>A.Doe</strong> / <em>Position, Company Name</em></span>
+              <blockquote>Ornare sed nec sagittis nisi nulla nec aliquam mi interdum et malesuada fames&hellip;</blockquote>
+            </div>
+          </li>
+          <li class="one_half">
+            <div class="clear"><img src="images/demo/80x80.png" alt=""> <span class="block"><strong>B.Doe</strong> / <em>Position, Company Name</em></span>
+              <blockquote>Ac ante ipsum primis in faucibus curabitur cursus est nec turpis posuere aliquet&hellip;</blockquote>
+            </div>
+          </li>
+        </ul>-->
+
+<!---- </section>
+    </div>-->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section class="hoc container clear">
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h2 class="heading">How It Works</h2>
+      <p>Here is the demo of how our website works.</p>
+    </div>
+    <ul class="nospace elements">
+      <li class="one_third first">
+        <article><a href="#"><img src="images/demo/320x220.png" alt=""></a>
+          <div class="txtwrap">
+            <h6 class="heading"></h6>
+            <time datetime="2045-04-06"><sup></sup> </time>
+            <p>Click on the upload option.&hellip;</p>
+            <footer><a href="#"> &raquo;</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="images/demo/320x220.png" alt=""></a>
+          <div class="txtwrap">
+            <h6 class="heading">Vivamus sit amet</h6>
+            <time datetime="2045-04-05">5<sup>th</sup> April 2045</time>
+            <p>Sagittis in aenean porta semper tortor vel blandit magna integer ac&hellip;</p>
+            <footer><a href="#">Read More &raquo;</a></footer>
+          </div>
+        </article>
+      </li>
+      <li class="one_third">
+        <article><a href="#"><img src="images/demo/320x220.png" alt=""></a>
+          <div class="txtwrap">
+            <h6 class="heading">Pulvinar nisl non</h6>
+            <time datetime="2045-04-04">4<sup>th</sup> April 2045</time>
+            <p>Neque malesuada euismod proin sit amet nisl velit mauris orci nisl&hellip;</p>
+            <footer><a href="#">Read More &raquo;</a></footer>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!---<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">-->
+  <div class="bgded overlay" style="background-color: blue;">
+  <section id="testimonials" class="hoc container clear">
+    <!-- ################################################################################################ -->
+    <div class="center btmspace-50">
+      <h2 class="heading">Popular Diseases</h2>
+      <p>Purus vestibulum ante ipsum primis in faucibus orci luctus turpis ullamcorper dolor gravida ut laoreet arcu
+        finibus praesent tincidunt nulla id augue hendrerit ac eleifend turpis tempor suspendisse fringilla massa nec
+        laoreet.</p>
+    </div>
+    <ul class="nospace group">
+      <li class="one_half first">
+        <div class="clear"><img src="images/demo/80x80.png" alt=""> <span class="block"><strong>A.Doe</strong> /
+            <em>Position, Company Name</em></span>
+          <blockquote>Ornare sed nec sagittis nisi nulla nec aliquam mi interdum et malesuada fames&hellip;</blockquote>
+        </div>
+      </li>
+      <li class="one_half">
+        <div class="clear"><img src="images/demo/80x80.png" alt=""> <span class="block"><strong>B.Doe</strong> /
+            <em>Position, Company Name</em></span>
+          <blockquote>Ac ante ipsum primis in faucibus curabitur cursus est nec turpis posuere aliquet&hellip;
+          </blockquote>
+        </div>
+      </li>
+      <li class="one_half first">
+        <div class="clear"><img src="images/demo/80x80.png" alt=""> <span class="block"><strong>A.Doe</strong> /
+            <em>Position, Company Name</em></span>
+          <blockquote>Ornare sed nec sagittis nisi nulla nec aliquam mi interdum et malesuada fames&hellip;</blockquote>
+        </div>
+      </li>
+      <li class="one_half">
+        <div class="clear"><img src="images/demo/80x80.png" alt=""> <span class="block"><strong>B.Doe</strong> /
+            <em>Position, Company Name</em></span>
+          <blockquote>Ac ante ipsum primis in faucibus curabitur cursus est nec turpis posuere aliquet&hellip;
+          </blockquote>
+        </div>
+      </li>
+    </ul>
+
+
+
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper coloured">
+  <div class="hoc clear">
+    <!-- ################################################################################################ 
+        <figure id="logos">
+          <ul class="nospace group">
+            <li><a href="#"><img src="images/demo/logo.png" alt=""></a></li>
+            <li><a href="#"><img src="images/demo/logo.png" alt=""></a></li>
+            <li><a href="#"><img src="images/demo/logo.png" alt=""></a></li>
+            <li><a href="#"><img src="images/demo/logo.png" alt=""></a></li>
+            <li><a href="#"><img src="images/demo/logo.png" alt=""></a></li>
+          </ul>
+          <figcaption class="hidden"><a class="btn small" href="#">More &raquo;</a></figcaption>
+        </figure>
+         ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="title">CONNECT</h6>
+      <ul class="nospace linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+            Kolkata &amp;North 24 Pargana, 700017
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +91 9433888911<br>
+          +91 9330494702</li>
+        <li><i class="fa fa-fax"></i> +91 9641990892</li>
+        <li><i class="fa fa-envelope-o"></i> info@nextDev.com</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">TEAM MEMBERS</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">Sibele Pal</a></li>
+        <li><a href="#">Sasshtik Trivedi</a></li>
+        <li><a href="#">Soumyadip Ghosh</a></li>
+        <li><a href="#">Sanjit Dutta</a></li>
+        <li><a href="#">Sagnik Manna</a></li>
+        <li><a href="#">Sumit Sharma</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">QUERY</h6>
+      <p class="btmspace-30">If you have any query you can connect</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">MORE</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">Scelerisque lacus </a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+            <p class="nospace">A metus luctus quis hendrerit sed vel elit ac mauris facilisis&hellip;</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">Vehicula tortor</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thirsday, 5<sup>th</sup> April 2045</time>
+            <p class="nospace">Ornare elit sed quam ultricies non rhoncus mauris ornare&hellip;</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2024 - All Rights Reserved - <a href="#">nextDev</a></p>
+    <!---<p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+         ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="layout/scripts/jquery.placeholder.min.js"></script>
+
+
+
+<!-- Button to Open the Chatbot -->
+<button id="open-chatbot" class="open-chatbot-button"><img src="rob.png" alt="bot icon"
+    class="w-8 h-8 rounded-md"></button>
+
+<!-- Chatbot Pop-up -->
+<div id="chatbot-popup" class="chatbot-popup">
+  <!-- Pop-up Close Button -->
+  <span class="close-button" id="close-chatbot">&times;</span>
+
+  <div class="p-2 bg-gemRegular flex gap-5 items-center">
+    <img src="rob.png" alt="chatbot image" class="w-10 h-10 rounded-md" />
+    <h1 class="text-gemDeep text-lg font-medium">Chatbot</h1>
+  </div>
+
+  <!-- Chat Area -->
+  <div id="chat-container" class="chat-container">
+    <!-- Chat messages will appear here -->
+  </div>
+
+  <!-- Text Input Box -->
+  <form action="" method="post" class="chat-form p-2" id="chat-form">
+    <textarea name="prompt" id="prompt" cols="30" rows="2" class="w-full p-2 rounded-md resize-none focus:outline-none"
+      style="background: rgb(255, 255, 255); border: 1px solid grey; color: rgb(31,31,31);"
+      placeholder="Enter message here..."></textarea>
+    <button type="submit" class="w-full p-1 bg-gemDeep rounded text-white">
+      Send
+    </button>
+  </form>
+</div>
+<script type="module" src="/main.js"></script>
+</body>
+
+</html>
